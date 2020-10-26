@@ -1,1 +1,15 @@
-<p>workers works!</p>
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4" *ngFor="let worker of workers">
+    <img src="{{worker.picture.large}}" class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{worker.name.title}} {{worker.name.first}} {{worker.name.last}}</h5>
+      <p class="card-text">UserName:{{worker.login.username}}</p>
+      <p class="card-text">Gender:{{worker.gender}}</p>
+      <p class="card-text">Email: {{worker.email}}</p>
+      <p class="card-text">Country: {{worker.location.country}}</p>
+      <p class="card-text">City: {{worker.location.city}}</p>
+      <p class="card-text">Phone: {{worker.phone}}</p>
+      <p class="card-text"><small class="text-muted">Birthday: {{worker.dob.date}} - Age: {{worker.dob.age}}</small></p>
+    </div>
+  </div>
+</div>
