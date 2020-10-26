@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-ejercicio-http-directorio-empleados"
+    }
+  },
+  "defaultProject": "angular-ejercicio-http-directorio-empleados",
+  "cli": {
+    "analytics": false
+  }
 }
